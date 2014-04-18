@@ -3,8 +3,9 @@
 ## avoid the overhead of recomputing this value every time it is needed.
 
 
-## This function takes a matrix as input and returns a special list object 
-## containing function calls for getting and setting attributes of the matrix.
+## The makeCacheMatrix function takes a matrix as input and returns a special 
+## list object containing function calls for getting and setting attributes of 
+## the matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -19,9 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function takes a special list object created by the makeCacheMatrix  
-## function as input and uses the function definitions provided by the 
-## list to test whether the inverse matrix has been previously cached.
+## The cacheSolve function takes a special list object created by the 
+## makeCacheMatrix function as input and uses the function definitions provided 
+## by the list to test whether the inverse matrix has been previously cached.
 ## If it has been cached the cached inverse matrix is returned,
 ## and if it hasn't been cached the inverse of the matrix is calculated and 
 ## returned.
